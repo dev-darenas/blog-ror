@@ -1,24 +1,17 @@
-# README
+# Install app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Create model
+`````
+rails g model NombreSingular campo:tipo_campo campo:tipo_campo campo:tipo_campo
+`````
 
-* Ruby version
+Create Controller
+`````
+rails g controller NombreControllerPlural index create new update edit show destroy
+`````
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`````
+  bundle install
+  rake db:setup
+````
