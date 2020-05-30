@@ -4,6 +4,7 @@
 <% @blogs.each do |blog| %>
   <p><b> <%= blog.id %> </b></p>
   <p><%= blog.title %></p>
+  <%= link_to 'Show', blog_path(blog) %>
   <%= link_to 'delete', "/blogs/#{blog.id}", method: :delete, data: { confirm: 'Are you sure?' } %>
   <hr>
 <% end %>

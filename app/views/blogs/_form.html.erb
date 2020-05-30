@@ -1,0 +1,13 @@
+<%= form_with model: blog do |form| %>
+  <%= form.label 'Title' %>
+  <%= form.text_field :title %>
+
+  <%= form.label 'Sub Title' %>
+  <%= form.text_field :subtitle %>
+
+  <%= form.label 'Descrip' %>
+  <%= form.text_area :descrip %>
+
+  <%= form.submit %>
+  <%= link_to 'Back', blogs_path %>
+<% end %>
